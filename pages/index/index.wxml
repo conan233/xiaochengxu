@@ -1,0 +1,70 @@
+<!--index.wxml-->
+<view class="container"> 
+  <view class="head">
+     <view class="leftHead opa2" bindtap="leftHandleClick">热点     </view>
+     <view class="rightHead opa1" bindtap="RightHandleClick">关注</view>
+  </view>
+<view class="leftContent"  wx:if="{{headNum == 1}}">
+  <!-- <view class="navBar">
+     <view class="navItem" class="{{navBorder}}" bindtap="leftNavClick">足球现场</view>
+     <view class="navItem" class="{{navBorder1}}" bindtap="midNavClick">足球生活</view>
+     <view class="navItem" class="{{navBorder2}}" bindtap="rightNavClick">足球美女</view>
+  </view>
+  <view class="soccerSite" wx:if="{{navNum == 1}}">
+    <view wx:for="{{siteList}}" wx:for-index="idx" wx:for-item="itemName" class="listItem" wx:key="idx">
+        <image src="{{itemName.url}}" class="imgWidth"></image>
+        <view class="">{{itemName.msg}}</view>
+    </view>
+    <view class="bottomWord">没得了</view>
+  </view>
+  <view class="soccerLife" wx:if="{{navNum == 2}}">
+    生活
+  </view>
+  <view class="soccerBeauty" wx:if="{{navNum == 3}}">
+    美女
+  </view> -->
+<view class="btn-area">  
+    <view class="area {{currentTab===0 ? 'on' : ''}}" data-current="0" bindtap="switchTab">足球现场</view>  
+    <view class="area {{currentTab===1 ? 'on' : ''}}" data-current="1" bindtap="switchTab">足球生活</view>  
+    <view class="area {{currentTab===2 ? 'on' : ''}}" data-current="2" bindtap="switchTab">足球美女</view>  
+  </view>  
+
+   <swiper duration="1000" circular="true" class="swiper-box" current="{{currentTab}}" bindchange="bindChange">
+      <swiper-item class="item-box">
+         <block wx:for="{{arr}}" wx:for-item="i">
+            <view class="img-item">
+               <image src="{{i.img}}" class="image"/>
+               <text>{{i.text}}</text>
+            </view>
+         </block>
+      </swiper-item>
+      <swiper-item class="item">
+         <block wx:for="{{life}}" wx:for-item="i">
+            <view class="img">
+               <image src="{{i.img}}" class="image"/>
+               <text>{{i.text}}</text>
+            </view>
+         </block>
+      </swiper-item>
+      <swiper-item class="item-box">
+         <block wx:for="{{arr}}" wx:for-item="i">
+            <view class="img-item">
+               <image src="{{i.img}}" class="image"/>
+               <text>{{i.text}}</text>
+            </view>
+         </block>
+      </swiper-item>
+    </swiper>
+</view>
+<view class="rightContent" wx:if="{{headNum == 2}}">
+  关注
+</view>
+<view class="foot">
+   <navigator><image src="../../imgs/home.png"></image><text>首页</text></navigator>
+   <navigator><image src="../../imgs/search.png"></image><text>发现</text></navigator>
+   <navigator><image src="../../imgs/camera.png" class="cam"></image><text></text></navigator>
+   <navigator><image src="../../imgs/me.png"></image><text>我的</text></navigator>
+   <navigator url="../../pages/login/login"><image src="../../imgs/me.png"></image><text>登录</text></navigator>
+</view>
+
+</view>

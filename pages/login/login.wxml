@@ -1,0 +1,8 @@
+<!--login.wxml-->
+<view class="loginhead">足球圈-登录</view>
+<form bindsubmit="formSubmit" bindreset="formReset" class="f">
+    <input name="input" bindinput="handleName" placeholder="手机号" type="number" maxlength="11" class="int"/>
+    <input name="input" bindinput="handlePwd" placeholder="密码" type="password" class="int"/>
+    <view class="res">还没有账号？点击此处立即<navigator class="ress">注册</navigator></view>
+    <button class="btn" bindtap="submit">提交</button>
+</form>

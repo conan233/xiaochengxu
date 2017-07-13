@@ -1,0 +1,167 @@
+/**index.wxss**/
+.head{
+  width: 100%;
+  height: 88rpx;
+  background: #0dc441;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+.leftHead{
+  display: inline-block;
+  width:125rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius:20rpx 0 0 20rpx;
+}
+.rightHead{
+  display: inline-block;
+  width:125rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius:0 20rpx 20rpx 0;
+}
+
+ .opa1{
+    background: rgba(100,217,133,0.3);
+}
+
+.opa2{
+    background: rgba(100,217,133,0.8);
+} 
+
+.leftContent{
+  width:100%;
+  padding-bottom: 88rpx;
+}
+.rightContent{
+   position: absolute;
+  top:100rpx;
+}
+
+/* .navBar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro;
+}
+.navBar .navItem{
+  display: inline-block;
+  height: 88rpx;
+  line-height: 88rpx;
+  width: 33%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.navBorder{
+  color: #0dc441;
+   border-bottom: 3px solid #0dc441;
+}
+.listItem{
+  float: left;
+  margin-right: 5px;
+}
+.soccerSite{
+  padding-bottom: 50rpx;
+}
+.imgWidth{
+  width: 360rpx;
+  height: 360rpx;
+}
+.bottomWord{
+  clear: both;
+  height: 50rpx;
+  text-align: center;
+  color: gray;
+  padding-top: 50rpx;
+} */
+
+.btn-area{
+   width: 750rpx;
+   height:100rpx;
+   line-height:100rpx;
+   color: #999;
+   background: #fff;
+   opacity: 0.8;
+   display: flex;
+   justify-content: space-around;
+   position: fixed;
+   top:88rpx;
+   left: 0;
+   z-index: 1;
+}
+.area{
+   width: 33.33%;
+   text-align: center;
+   border-bottom: 1px solid #ccc;
+}
+.on{
+   color: #0dc441;
+   border-bottom: 3px solid #0dc441;
+   box-sizing: border-box;
+}
+.swiper-box{
+   height:2100rpx;
+   margin-top:200rpx;
+}
+.item-box{
+   background: #fff;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.img-item{
+   width: 350rpx;
+   height:400rpx;
+   border: 1px solid #e5e5e5;
+   margin-top: 5rpx;
+}
+.image{
+   width: 350rpx;
+   height: 350rpx;
+}
+.item{
+   background: #fff;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.img{
+   width: 350rpx;
+   border: 1rpx solid #e5e5e5;
+   margin-top: 5rpx;
+}
+.image{
+   width:350rpx;
+   height: 350rpx;
+}
+.foot{
+  position: fixed;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  height:100rpx;
+  color: gray;
+  display: flex;
+  justify-content: space-around;
+}
+.foot image{
+  width:60rpx;
+  height:60rpx;
+}
+.foot .cam{
+    width:120rpx;
+    height:120rpx;
+    margin-top:-20rpx;
+}
+.foot navigator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

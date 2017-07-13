@@ -1,0 +1,37 @@
+/* login.wxss */
+.int{
+  /*width: 580px;*/
+  width: 680rpx;
+  height: 100rpx;
+  border-bottom:1rpx solid #ccc;
+}
+.f{
+  width:750rpx;
+  height: 500rpx;
+   margin-left:20rpx; 
+  /* display: block; */
+  display: flex;
+}
+.res{
+  font-size: 40rpx;
+  color:#c6c6c6;
+  margin: 10rpx 0;
+}
+.ress{
+  color:#a3e9b7;
+  float: right;
+  padding-right:100rpx;
+}
+.btn{
+  width:680rpx;
+  background: #0dc441;
+}
+.loginhead{
+  width: 750rpx;
+  height: 80rpx;
+  background: #0dc441;
+  line-height: 60rpx;
+  text-align: center;
+  color:#fff;
+  font-size:60rpx;
+}
